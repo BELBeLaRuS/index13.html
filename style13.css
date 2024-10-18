@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    background-color: #2F2F2F;
+    position: fixed;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.cont{
+    width: 100%;
+    max-width: 1320px;
+    margin:0 auto;
+}
+
+header .cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.submenu{
+    opacity: 0;
+    position: absolute;
+    transform: translateY(50px);
+    transition: all 0.2s linear;
+}
+
+.main-menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-menu li a{
+    color: white;
+    display: block;
+    padding: 20px 15px;
+    transition: background-color 0.2s linear;
+}
+
+.main-menu li a.active{
+    background-color: rgb(204, 22 , 20);
+}
+
+.main-menu li a:hover{
+    background-color: rgb(204, 22 , 20);
+}
+
+body{
+    background-color:teal;
+}
+
+.arrow{
+    transform: rotate(90deg);
+    display: block;
+    width: 4px;
+    font-size: 20px;
+    height: 5px;
+}
+
+.dropdown{
+    display: flex !important;
+    gap: 5px;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-menu li:hover .submenu{
+    opacity: 1;
+    transform: translateY(0);  
+}
+
+.submenu{
+    background-color: white;
+    min-width: 200px;
+}
+
+.submenu li a{
+    color: rgb(66, 69, 72);
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.submenu li a:hover{
+    color: white;
+    
+}
